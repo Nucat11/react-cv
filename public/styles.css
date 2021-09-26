@@ -1,0 +1,28 @@
+.landingPage {
+  background: url("https://res.cloudinary.com/nucat/image/upload/v1632655836/Bez_tytu%C5%82u_bxrhlb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Przemysław Paziewski */
+.title {
+  font-family: Oleo Script;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6em;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  
+
+}
+
+.bannerText {
+    width: 100%;
+    position: absolute;
+    top: 42.315vh;
+    text-align: center;
+}

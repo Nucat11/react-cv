@@ -1,28 +1,119 @@
 .landingPage {
-  background: url("https://res.cloudinary.com/nucat/image/upload/v1632655836/Bez_tytu%C5%82u_bxrhlb.png");
+  background: url("https://res.cloudinary.com/nucat/image/upload/v1632756828/Bez_tytu%C5%82u_bxrhlb_qoz0ym.webp");
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
   background-size: cover;
   height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-attachment: fixed;
 }
 
-/* Przemysław Paziewski */
 .title {
-  font-family: Oleo Script;
+  font-family: "Syncopate", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 6em;
+  font-size: 4em;
   text-align: center;
   color: #ffffff;
-  position: relative;
-  
-
+  line-height: 1;
+  margin-bottom: 2vh;
+  animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
-.bannerText {
-    width: 100%;
-    position: absolute;
-    top: 42.315vh;
+.titleP {
+  font-family: "Averia Serif Libre", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.arrow {
+  font-size: 7em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#aboutMe {
+  background-color: #2d1f38;
+  height: 1000vh;
+}
+
+.activeClass {
+  background-color: black;
+}
+
+.arrowLink {
+  position: absolute;
+  left: 50%;
+  bottom: 1vh;
+  margin-left: -56px;
+  opacity: 30%;
+  border-radius: 50%;
+  color: black;
+  animation: slide1 3s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 858px) {
+  .title {
     text-align: center;
+    font-size: 2.75em;
+  }
+  .titleP {
+    visibility: collapse;
+  }
+}
+
+.arrowLink:hover {
+  background-color: rgb(0, 0, 0, 0.25);
+}
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 5px);
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #fff, 0 0 16px #ff7d13,
+      0 0 20px #ff7d13, 0 0 30px #ff7d13, 0 0 40px #ff7d13, 0 0 60px #ff7d13;
+  }
+  to {
+    text-shadow: 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #fff, 0 0 18px #ff7d13,
+      0 0 23px #ff7d13, 0 0 32px #ff7d13, 0 0 47px #ff7d13, 0 0 70px #ff7d13;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .title {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .titleP {
+    visibility: collapse;
+  }
+}
+
+.navbar {
+  background-color: transparent;
+  height: 5vh;
+  display: flex;
+  box-shadow: none;
+}
+
+.navbar.active {
+  background: linear-gradient(90deg, rgb(57 35 64) 0%, rgb(45 31 56) 100%);
+}
+
+.MuiToolbar-root {
+  position:absolute;
 }

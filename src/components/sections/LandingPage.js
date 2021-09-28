@@ -9,16 +9,17 @@ import { Button } from "@mui/material";
 export default function LandingPage() {
   return (
     <Grid className="landingPage">
-      <Grid item xs={12}>
+      <div className='line'/>
+      <Grid item xs={12} sx={{  zIndex: 1}}>
         <Typography className="title">Przemysław Paziewski</Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} sx={{  zIndex: 1}}>
         <Typography className="titleP">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor ut labore et dolore aliqua.
         </Typography>
       </Grid>
-      <Button className="arrowLink" aria-label="Scroll to about me!">
+      <Button className="arrowLink" aria-label="Scroll to about me!" sx={{  zIndex: 1}}>
         <Link
           to="aboutMe"
           spy={true}

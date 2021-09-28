@@ -5,11 +5,15 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
+// eslint-disable-next-line no-unused-vars
+import { Link, animateScroll as scroll } from "react-scroll";
+import { Box } from "@mui/material";
+import { Breadcrumbs } from "@mui/material";
 
 export default function HideAppBar(props) {
   const [navbar, setNavbar] = useState(false);
   const trigger = useScrollTrigger({
-      threshold: 200
+    threshold: 200,
   });
 
   const changeBackground = () => {
@@ -23,17 +27,30 @@ export default function HideAppBar(props) {
   window.addEventListener("scroll", changeBackground);
 
   return (
-    <React.Fragment>
+    <Box sx={{ flexGrow: 1 }}>
       <Slide appear={false} direction="down" in={!trigger}>
         <AppBar className={navbar ? "navbar active" : "navbar"}>
-          <Toolbar>
-            <Typography variant="h6" component="div">
-              xD21
-            </Typography>
+          <Toolbar className="toolbar">
+            <Box className="emptyBox" sx={{ flexGrow: 1 }} />
+            <Breadcrumbs
+              aria-label="breadcrumb"
+              sx={{ marginRight: "2em", marginTop: "-1em" }}
+            >
+              <Link to="aboutMe" spy={true} smooth={true} duration={800}>
+                <Typography>About Me</Typography>
+              </Link>
+
+              <Link to="aboutMe" spy={true} smooth={true} duration={800}>
+                <Typography>Projects</Typography>
+              </Link>
+
+              <Link to="aboutMe" spy={true} smooth={true} duration={800}>
+                <Typography>Contact Me</Typography>
+              </Link>
+            </Breadcrumbs>
           </Toolbar>
         </AppBar>
       </Slide>
-      <Toolbar />
-    </React.Fragment>
+    </Box>
   );
 }

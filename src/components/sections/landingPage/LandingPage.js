@@ -5,21 +5,30 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 // eslint-disable-next-line no-unused-vars
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Button } from "@mui/material";
+import Animations from "./animation/Animations";
+import './animation/lineAnimation.css';
+import './landingPage.css';
+
+
 
 export default function LandingPage() {
   return (
     <Grid className="landingPage">
-      <div className='line'/>
-      <Grid item xs={12} sx={{  zIndex: 1}}>
+      <Animations />
+      <Grid item xs={12} sx={{ zIndex: 1 }}>
         <Typography className="title">Przemysław Paziewski</Typography>
       </Grid>
-      <Grid item xs={12} sx={{  zIndex: 1}}>
+      <Grid item xs={12} sx={{ zIndex: 1 }}>
         <Typography className="titleP">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor ut labore et dolore aliqua.
         </Typography>
       </Grid>
-      <Button className="arrowLink" aria-label="Scroll to about me!" sx={{  zIndex: 1}}>
+      <Button
+        className="arrowLink"
+        aria-label="Scroll to about me!"
+        sx={{ zIndex: 1 }}
+      >
         <Link
           to="aboutMe"
           spy={true}

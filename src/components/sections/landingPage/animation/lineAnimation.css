@@ -1,0 +1,190 @@
+.blueLine {
+  background-color: white;
+  height: 2px;
+  width: 8%;
+  box-shadow: 0 0 5px #1bffec, 0 0 10px #1bffec, 0 0 14px #1bffec,
+    0 0 20px #1bffec, 0 0 25px #1bffec, 0 0 35px #1bffec, 0 0 45px #1bffec,
+    0 0 60px #1bffec;
+  z-index: 0;
+  position: absolute;
+  animation: blueLineAnimation 4s infinite 4s;
+  transform: rotate(10deg);
+  visibility: hidden;
+}
+
+@keyframes blueLineAnimation {
+  0% {
+    visibility: visible;
+    left: 2%;
+    top: 28%;
+  }
+  15% {
+    left: 40%;
+    top: 40%;
+    transform: scale(0.2) rotate(10deg);
+    opacity: 0;
+  }
+  20%,
+  95% {
+    left: 2%;
+    top: 28%;
+    transform: scale(1) rotate(10deg);
+    opacity: 0;
+  }
+  100% {
+    left: 2%;
+    top: 28%;
+  }
+}
+.blueLine2 {
+  background-color: white;
+  height: 2px;
+  width: 8%;
+  box-shadow: 0 0 5px #1bffec, 0 0 10px #1bffec, 0 0 14px #1bffec,
+    0 0 20px #1bffec, 0 0 25px #1bffec, 0 0 35px #1bffec, 0 0 45px #1bffec,
+    0 0 60px #1bffec;
+  z-index: 0;
+  position: absolute;
+  animation: blueLine2Animation 4s infinite 3s;
+  transform: rotate(10deg);
+  visibility: hidden;
+}
+
+@keyframes blueLine2Animation {
+  0% {
+    visibility: visible;
+    top: 60%;
+    left: 90%;
+  }
+  15% {
+    top: 50%;
+    left: 48%;
+    transform: scale(0.2) rotate(10deg);
+    opacity: 0;
+  }
+  20%,
+  95% {
+    top: 60%;
+    left: 90%;
+    transform: scale(1) rotate(10deg);
+    opacity: 0;
+  }
+  100% {
+    top: 60%;
+    left: 90%;
+  }
+}
+.greenLine {
+  background-color: white;
+  height: 2px;
+  width: 8%;
+  box-shadow: 0 0 5px #3bfc9b, 0 0 10px #3bfc9b, 0 0 14px #3bfc9b,
+    0 0 20px #3bfc9b, 0 0 25px #3bfc9b, 0 0 35px #3bfc9b, 0 0 45px #3bfc9b,
+    0 0 60px #3bfc9b;
+  z-index: 0;
+  position: absolute;
+  transform: rotate(44deg);
+  animation: greenLineAnimation 4s infinite 2s;
+  visibility: hidden;
+}
+
+@keyframes greenLineAnimation {
+  0% {
+    visibility: visible;
+    left: 70.5%;
+    top: 90%;
+  }
+  15% {
+    left: 50%;
+    top: 60%;
+    transform: scale(0.2) rotate(44deg);
+    opacity: 0;
+  }
+  20%,
+  95% {
+    left: 70.5%;
+    top: 90%;
+    transform: rotate(44deg);
+    opacity: 0;
+  }
+  100% {
+    left: 70.5%;
+    top: 90%;
+  }
+}
+.orangeLine {
+  background-color: white;
+  height: 2px;
+  width: 5%;
+  box-shadow: 0 0 5px #ff7d13, 0 0 10px #ff7d13, 0 0 14px #ff7d13,
+    0 0 20px #ff7d13, 0 0 25px #ff7d13, 0 0 35px #ff7d13, 0 0 45px #ff7d13,
+    0 0 60px #ff7d13;
+  z-index: 0;
+  position: absolute;
+  animation: lineAnimation 4s infinite ;
+  transform: rotate(-45deg);
+  visibility: hidden;
+}
+
+@keyframes lineAnimation {
+  0% {
+    visibility: visible;
+    left: 30%;
+    top: 80%;
+  }
+  15% {
+    left: 44%;
+    top: 50%;
+    transform: scale(0.2) rotate(-45deg);
+    opacity: 0;
+  }
+  20%,
+  95% {
+    left: 30%;
+    top: 80%;
+    transform: scale(1) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    left: 30%;
+    top: 80%;
+  }
+}
+.orangeLine2 {
+  background-color: white;
+  height: 2px;
+  width: 7%;
+  box-shadow: 0 0 5px #ff7d13, 0 0 10px #ff7d13, 0 0 14px #ff7d13,
+    0 0 20px #ff7d13, 0 0 25px #ff7d13, 0 0 35px #ff7d13, 0 0 45px #ff7d13,
+    0 0 60px #ff7d13;
+  z-index: 0;
+  position: absolute;
+  animation: orangeLineAnimation 4s infinite 1s;
+  transform: rotate(-25deg);
+  visibility: hidden;
+}
+
+@keyframes orangeLineAnimation {
+  0% {
+    visibility: visible;
+    top: 8%;
+    left: 90%;
+  }
+  15% {
+    top: 40%;
+    left: 50%;
+    transform: scale(0.2) rotate(-25deg);
+    opacity: 0;
+  }
+  20%,
+  95% {
+    top: 8%;
+    left: 90%;
+    transform: scale(1) rotate(-25deg);
+    opacity: 0;
+  }
+  100% {
+    top: 8%;
+    left: 90%;
+  }
+}

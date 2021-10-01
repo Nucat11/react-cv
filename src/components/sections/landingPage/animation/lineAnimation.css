@@ -1,4 +1,4 @@
-.blueLine {
+.blue-line {
   background-color: white;
   height: 2px;
   width: 8%;
@@ -7,12 +7,12 @@
     0 0 60px #1bffec;
   z-index: 0;
   position: absolute;
-  animation: blueLineAnimation 4s infinite 4s;
+  animation: blue-line-animation 4s infinite 4s;
   transform: rotate(10deg);
   visibility: hidden;
 }
 
-@keyframes blueLineAnimation {
+@keyframes blue-line-animation {
   0% {
     visibility: visible;
     left: 2%;
@@ -36,7 +36,7 @@
     top: 28%;
   }
 }
-.blueLine2 {
+.blue-line-2 {
   background-color: white;
   height: 2px;
   width: 8%;
@@ -45,12 +45,12 @@
     0 0 60px #1bffec;
   z-index: 0;
   position: absolute;
-  animation: blueLine2Animation 4s infinite 3s;
+  animation: blue-line-2Animation 4s infinite 3s;
   transform: rotate(10deg);
   visibility: hidden;
 }
 
-@keyframes blueLine2Animation {
+@keyframes blue-line-2Animation {
   0% {
     visibility: visible;
     top: 60%;
@@ -74,7 +74,7 @@
     left: 90%;
   }
 }
-.greenLine {
+.green-line {
   background-color: white;
   height: 2px;
   width: 8%;
@@ -84,11 +84,11 @@
   z-index: 0;
   position: absolute;
   transform: rotate(44deg);
-  animation: greenLineAnimation 4s infinite 2s;
+  animation: green-line-animation 4s infinite 2s;
   visibility: hidden;
 }
 
-@keyframes greenLineAnimation {
+@keyframes green-line-animation {
   0% {
     visibility: visible;
     left: 70.5%;
@@ -112,7 +112,7 @@
     top: 90%;
   }
 }
-.orangeLine {
+.orange-line {
   background-color: white;
   height: 2px;
   width: 5%;
@@ -121,12 +121,12 @@
     0 0 60px #ff7d13;
   z-index: 0;
   position: absolute;
-  animation: lineAnimation 4s infinite ;
+  animation: line-animation 4s infinite ;
   transform: rotate(-45deg);
   visibility: hidden;
 }
 
-@keyframes lineAnimation {
+@keyframes line-animation {
   0% {
     visibility: visible;
     left: 30%;
@@ -150,7 +150,7 @@
     top: 80%;
   }
 }
-.orangeLine2 {
+.orange-line-2 {
   background-color: white;
   height: 2px;
   width: 7%;
@@ -159,12 +159,12 @@
     0 0 60px #ff7d13;
   z-index: 0;
   position: absolute;
-  animation: orangeLineAnimation 4s infinite 1s;
+  animation: orange-line-animation 4s infinite 1s;
   transform: rotate(-25deg);
   visibility: hidden;
 }
 
-@keyframes orangeLineAnimation {
+@keyframes orange-line-animation {
   0% {
     visibility: visible;
     top: 8%;

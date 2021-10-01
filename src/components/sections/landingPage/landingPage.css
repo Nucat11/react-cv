@@ -1,4 +1,4 @@
-.landingPage {
+.landing-page {
   background: url("https://res.cloudinary.com/nucat/image/upload/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.webp");
   background-position: center;
   background-repeat: no-repeat;
@@ -9,19 +9,20 @@
   align-content: center;
 }
 .title {
-  font-family: "Syncopate", sans-serif;
+  font-family: "Monoton", cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: 4em;
+  font-size: 6em;
   text-align: center;
   color: #ffffff;
   line-height: 1;
   margin-bottom: 2vh;
-  animation: neon1 3s ease-in-out infinite alternate;
+  animation: neon-1 3s ease-in-out infinite alternate;
+  padding: 0 2% 0 2%;
 }
 
-.titleP {
-  font-family: "Averia Serif Libre", cursive;
+.title-p {
+  font-family: "Oxygen", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
@@ -33,23 +34,26 @@
   font-size: 7em;
   color: #ffffff;
   cursor: pointer;
+  filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+    drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #ff7d13)
+    drop-shadow(0 0 5px #ff7d13) drop-shadow(0 0 10px #ff7d13)
+    drop-shadow(0 0 14px #ff7d13) drop-shadow(0 0 20px #ff7d13);
 }
-.arrowLink {
+.arrow-link {
   position: absolute;
   left: 50%;
   bottom: 1vh;
   margin-left: -56px;
-  opacity: 30%;
+  opacity: 1;
   border-radius: 50%;
-  color: black;
-  animation: slide1 1s ease-in-out infinite;
+  animation: slide-1 1s ease-in-out infinite;
 }
 
-.arrowLink:hover {
-  background-color: rgb(0, 0, 0, 0.25);
+.arrow-link:hover {
+  background-color: rgb(0, 0, 0, 0.2);
 }
 
-@keyframes slide1 {
+@keyframes slide-1 {
   0%,
   100% {
     transform: translate(0, 0);
@@ -60,7 +64,7 @@
   }
 }
 
-@keyframes neon1 {
+@keyframes neon-1 {
   from {
     text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #ff7d13,
       0 0 12px #ff7d13, 0 0 24px #ff7d13, 0 0 35px #ff7d13, 0 0 45px #ff7d13;
@@ -69,4 +73,14 @@
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 14px #fff, 0 0 20px #ff7d13,
       0 0 25px #ff7d13, 0 0 35px #ff7d13, 0 0 45px #ff7d13, 0 0 60px #ff7d13;
   }
+}
+
+@media only screen and (max-width: 858px) {
+  .title {
+    font-size: 4em;
+  }
+}
+
+.MuiButton-root {
+  color:rgb(0, 0, 0, 0)
 }

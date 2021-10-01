@@ -9,7 +9,7 @@ import Slide from "@mui/material/Slide";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Box } from "@mui/material";
 import { Breadcrumbs } from "@mui/material";
-import './AppBar.css';
+import "./AppBar.css";
 
 export default function HideAppBar(props) {
   const [navbar, setNavbar] = useState(false);
@@ -32,20 +32,21 @@ export default function HideAppBar(props) {
       <Slide appear={false} direction="down" in={!trigger}>
         <AppBar className={navbar ? "navbar active" : "navbar"}>
           <Toolbar className="toolbar">
-            <Box className="emptyBox" sx={{ flexGrow: 1 }} />
+            <Box className="empty-box" sx={{ flexGrow: 1 }} />
             <Breadcrumbs
               aria-label="breadcrumb"
               sx={{ marginRight: "2em", marginTop: "-1em" }}
+              className="app-bar-text"
             >
-              <Link to="aboutMe" spy={true} smooth={true} duration={800}>
+              <Link to="about-me" spy={true} smooth={true} duration={800}>
                 <Typography>About Me</Typography>
               </Link>
 
-              <Link to="aboutMe" spy={true} smooth={true} duration={800}>
+              <Link to="about-me" spy={true} smooth={true} duration={800}>
                 <Typography>Projects</Typography>
               </Link>
 
-              <Link to="aboutMe" spy={true} smooth={true} duration={800}>
+              <Link to="about-me" spy={true} smooth={true} duration={800}>
                 <Typography>Contact Me</Typography>
               </Link>
             </Breadcrumbs>

@@ -1,36 +1,59 @@
-@media only screen and (max-width: 858px) {
+@media only screen and (max-width: 900px) {
   .title {
     font-size: 2.75em;
   }
-  .titleP {
+  .title-p {
     visibility: collapse;
   }
-  .emptyBox {
+  .empty-box {
     display: none;
   }
   .toolbar {
     justify-content: center;
     align-items: center;
   }
-  .blueLine {
+  .blue-line {
     transform: rotate(20deg) scale(1.5) !important;
   }
-  .blueLine2 {
+  .blue-line-2 {
     transform: scale(1.5) rotate(15deg) !important;
   }
-  .greenLine {
+  .green-line {
     transform: scale(1.5) rotate(75deg) !important;
+  }
+  .orange-line {
+    transform: scale(1.5) rotate(-60deg) !important;
+  }
+  .orange-line-2 {
+    transform: scale(1.5) rotate(-60deg) !important;
+  }
+  .about-me-box {
+    height: 90% !important;
+  }
+  .about-me-text {
+    line-height: 1.2em !important;
+  }
+}
 
+@media only screen and (max-width: 1200px) {
+  .circle-div {
+    margin-right: 0 !important;
+    margin-top: 23vh !important;
   }
-  .orangeLine {
-    transform: scale(1.5) rotate(-60deg) !important;
+  .triangle-div {
+    display: none;
   }
-  .orangeLine2 {
-    transform: scale(1.5) rotate(-60deg) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .circle-div {
+    margin-top: 18vh !important;
+  }
+  .about-me-text {
+    padding-top: 1vh !important;
   }
 }
 
 body {
   cursor: default;
 }
-

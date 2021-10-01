@@ -4,11 +4,11 @@ export default function Animations() {
   const min = 3;
   const max = 5;
   window.onload = function () {
-    const orange = document.querySelector(".orangeLine");
-    const blue = document.querySelector(".blueLine");
-    const blue2 = document.querySelector(".blueLine2");
-    const greenLine = document.querySelector(".greenLine");
-    const orangeLine2 = document.querySelector(".orangeLine2");
+    const orange = document.querySelector(".orange-line");
+    const blue = document.querySelector(".blue-line");
+    const blue2 = document.querySelector(".blue-line-2");
+    const greenLine = document.querySelector(".green-line");
+    const orangeLine2 = document.querySelector(".orange-line-2");
 
     function setProperty(duration) {
       orange.style.setProperty("animation-duration", duration + "s");
@@ -27,11 +27,11 @@ export default function Animations() {
   };
   return (
     <>
-      <div className="orangeLine" />
-      <div className="blueLine" />
-      <div className="greenLine" />
-      <div className="blueLine2" />
-      <div className="orangeLine2" />
+      <div className="orange-line" />
+      <div className="blue-line" />
+      <div className="green-line" />
+      <div className="blue-line-2" />
+      <div className="orange-line-2" />
     </>
   );
 }

@@ -13,24 +13,24 @@ import './landingPage.css';
 
 export default function LandingPage() {
   return (
-    <Grid className="landingPage">
+    <Grid className="landing-page">
       <Animations />
       <Grid item xs={12} sx={{ zIndex: 1 }}>
-        <Typography className="title">Przemysław Paziewski</Typography>
+        <Typography className="title">Przemek Paziewski</Typography>
       </Grid>
       <Grid item xs={12} sx={{ zIndex: 1 }}>
-        <Typography className="titleP">
+        <Typography className="title-p">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor ut labore et dolore aliqua.
         </Typography>
       </Grid>
       <Button
-        className="arrowLink"
+        className="arrow-link"
         aria-label="Scroll to about me!"
         sx={{ zIndex: 1 }}
       >
         <Link
-          to="aboutMe"
+          to="about-me"
           spy={true}
           smooth={true}
           duration={800}

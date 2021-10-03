@@ -6,17 +6,20 @@
   border-width: 2px;
 }
 #about-me {
-  background: rgb(45,31,56);
-  background: linear-gradient(0deg, rgba(45,31,56,1) 80%, rgba(55,32,61,1) 100%);
+  background: url("https://res.cloudinary.com/nucat/image/upload/v1633184582/stardust_rpeg3y.webp"), linear-gradient(
+      0deg,
+      rgba(45, 31, 56, 1) 80%,
+      rgba(55, 32, 61, 1) 100%
+    );
+    
   height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  z-index: -1;
 }
 
 .about-me-box {
-  height: 100%;
+  height: fit-content;
   margin-top: -5%;
   box-shadow: 5px 4px 50px #000000;
   background-color: #2d1f38;
@@ -24,12 +27,10 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  z-index: 1;
 }
 
 .about-me-title {
   color: white;
-  font-size: 4em;
   font-family: "Titan One", cursive;
   font-weight: 400;
   padding-top: 2vh;
@@ -37,12 +38,11 @@
 
 .about-me-text {
   color: white;
-  font-size: 1em;
   padding: 1em;
   padding-top: 3vh;
   height: 100%;
-  line-height: 3em;
   font-family: "Oxygen", sans-serif;
+  opacity: 0.6;
 }
 
 .circle-neon {
@@ -67,10 +67,10 @@
 }
 
 .box-with-avatar {
-  z-index: 1;
   height: 65vh;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .circle-div {
@@ -89,14 +89,13 @@
 .triangle-neon {
   animation: triangle-animation 5s ease-in-out infinite alternate;
   position: absolute;
-  height: 50vh;
-  width: 100%;
+  transform: rotate(25deg);
 }
 
 .triangle-div {
   position: absolute;
   margin-left: 65%;
-  width: 35%;
+  width: 25%;
 }
 
 @keyframes triangle-animation {

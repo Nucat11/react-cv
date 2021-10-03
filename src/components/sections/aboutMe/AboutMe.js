@@ -24,16 +24,31 @@ export default function AboutMe() {
       </Box>
       <Grid container className="grid-about">
         <Grid item xs={12} md={10} lg={7} className="about-me-box">
-          <Typography className="about-me-title">About Me</Typography>
-          <Typography align="center" className="about-me-text">
+          <Typography
+            className="about-me-title"
+            sx={{
+              fontSize: {
+                xs: "3em",
+                md: "3.5em",
+              },
+            }}
+          >
+            About Me
+          </Typography>
+          <Typography className="about-me-text" sx={{
+              fontSize: {
+                xs: "1.125em",
+                md: "1.375em",
+              },
+              lineHeight: {
+                xs: "1.2em",
+                md: "1.5em",
+              },
+            }}>
             Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam eaque ipsa,
             quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas
-            sit, aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos, qui ratione voluptatem sequi nesciunt, neque porro
-            quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur,
-            adipisci velit,
+            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
           </Typography>
         </Grid>
       </Grid>

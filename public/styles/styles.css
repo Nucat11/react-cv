@@ -10,7 +10,6 @@
   }
   .toolbar {
     justify-content: center;
-    align-items: center;
   }
   .blue-line {
     transform: rotate(20deg) scale(1.5) !important;
@@ -27,12 +26,8 @@
   .orange-line-2 {
     transform: scale(1.5) rotate(-60deg) !important;
   }
-  .about-me-box {
-    height: 90% !important;
-  }
-  .about-me-text {
-    line-height: 1.2em !important;
-  }
+
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -43,6 +38,8 @@
   .triangle-div {
     display: none;
   }
+
+
 }
 
 @media only screen and (max-width: 600px) {

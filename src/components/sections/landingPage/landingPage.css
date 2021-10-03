@@ -7,6 +7,10 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .title {
   font-family: "Monoton", cursive;

@@ -32,7 +32,11 @@ export default function HideAppBar(props) {
       <Slide appear={false} direction="down" in={!trigger}>
         <AppBar className={navbar ? "navbar active" : "navbar"}>
           <Toolbar className="toolbar">
-            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ flexGrow: 1, 
+            display: {
+              xs: 'none',
+              md: 'inherit'
+            }}} />
             <Breadcrumbs
               aria-label="breadcrumb"
               sx={{ marginRight: "2em", height: '100%' }}

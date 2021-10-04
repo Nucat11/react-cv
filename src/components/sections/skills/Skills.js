@@ -17,16 +17,16 @@ export default function Skills() {
             md: "inherit",
           },
           marginTop: {
-            md: "40vh",
+            md: "55vh",
             lg: "32vh",
           },
           marginLeft: {
-            md: "35%",
-            lg: "40%",
+            md: "30%",
+            lg: "25%",
           },
           height: {
-            md: "400px",
-            lg: "500px",
+            md: "40vh",
+            lg: "60vh",
           },
         }}
       >
@@ -36,8 +36,8 @@ export default function Skills() {
         className="wrench-div"
         sx={{
           opacity: {
-            xs: "0.5",
-            md: "0.7",
+            xs: "0.3",
+            md: "0.9",
           },
         }}
       >
@@ -83,7 +83,7 @@ export default function Skills() {
             accusantium doloremque laudantium, totam rem aperiam eaque ipsa,
             quae ab illo inventore veritatis et quasi architecto beatae vitae
             accusantium doloremque laudantium, totam rem aperiam eaque ipsa,
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
+   
           </Typography>
         </Grid>
       </Grid>
@@ -100,45 +100,48 @@ export default function Skills() {
         >
           Things I love
         </Typography>
-        <Box display="flex">
-          <FaWordpressSimple className="icons" />
-          <FaWordpressSimple className="icons" />
-          <FaWordpressSimple className="icons" />
-          <Box
-            sx={{
-              flexGrow: {
-                xs: "0",
-                md: "7",
-              },
-            }}
-          />
-        </Box>
-        <Box display="flex">
-          <Box sx={{ flexGrow: "1" }} />
-          <FaWordpressSimple className="icons" />
-          <FaWordpressSimple className="icons" />
-          <Box
-            sx={{
-              flexGrow: {
-                xs: "1",
-                md: "7",
-                lg: "8",
-              },
-            }}
-          />
-        </Box>
-        <Box display="flex">
-          <FaWordpressSimple className="icons" />
-          <FaWordpressSimple className="icons" />
-          <FaWordpressSimple className="icons" />
-          <Box
-            sx={{
-              flexGrow: {
-                xs: "0",
-                md: "7",
-              },
-            }}
-          />
+        <Box sx={{paddingTop: '2vh'}}>
+          {" "}
+          <Box display="flex">
+            <FaWordpressSimple className="icons" />
+            <FaWordpressSimple className="icons" />
+            <FaWordpressSimple className="icons" />
+            <Box
+              sx={{
+                flexGrow: {
+                  xs: "0",
+                  md: "7",
+                },
+              }}
+            />
+          </Box>
+          <Box display="flex">
+            <Box sx={{ flexGrow: "1" }} />
+            <FaWordpressSimple className="icons" />
+            <FaWordpressSimple className="icons" />
+            <Box
+              sx={{
+                flexGrow: {
+                  xs: "1",
+                  md: "7",
+                  lg: "8",
+                },
+              }}
+            />
+          </Box>
+          <Box display="flex">
+            <FaWordpressSimple className="icons" />
+            <FaWordpressSimple className="icons" />
+            <FaWordpressSimple className="icons" />
+            <Box
+              sx={{
+                flexGrow: {
+                  xs: "0",
+                  md: "7",
+                },
+              }}
+            />
+          </Box>
         </Box>
       </Box>
     </Box>

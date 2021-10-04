@@ -1,4 +1,28 @@
 .contact {
     height: 50vh;
     background: linear-gradient(-5deg, rgba(45,31,56,1) 60%, #463851 50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.contact-icons {
+    font-size: 10em;
+    color: white;
+    padding-bottom: 30px;
+}
+.facebook {
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff)
+    drop-shadow(0 0 1px #fff) drop-shadow(0 0 4px #ff7d13)
+    drop-shadow(0 0 5px #ff7d13);
+}
+.github {
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff)
+    drop-shadow(0 0 1px #fff) drop-shadow(0 0 4px #3bfc9b)
+    drop-shadow(0 0 5px #3bfc9b);
+}
+
+.email {
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff)
+    drop-shadow(0 0 1px #fff) drop-shadow(0 0 4px #1bffec)
+    drop-shadow(0 0 5px #1bffec);
 }

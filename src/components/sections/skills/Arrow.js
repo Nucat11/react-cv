@@ -12,7 +12,7 @@ export default function Arrow() {
         transform="matrix(1 0 0 1 -183.388507 -19.006591)"
         fill="none"
         stroke="#fff"
-        stroke-width="1.28"
+        
       />
       <line
         id="eRxoITlnOVF3"
@@ -23,7 +23,7 @@ export default function Arrow() {
         transform="matrix(-0.655377 0.101158 -0.061018 -0.395319 248.597436 317.664453)"
         fill="none"
         stroke="#fff"
-        stroke-width="3"
+        
       />
       <line
         id="eRxoITlnOVF4"
@@ -34,7 +34,6 @@ export default function Arrow() {
         transform="matrix(0.489591 -0.447272 0.269791 0.295318 243.292283 306.588791)"
         fill="none"
         stroke="#fff"
-        stroke-width="3"
       />
     </svg>
   );

@@ -1,10 +1,14 @@
-.projects {
+.projects-background {
+  min-height: 100vh;
   height: fit-content;
   background-color: #463851;
+  padding: 6%;
+}
+.projects {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6%;
+
 }
 
 .grid-imgs {
@@ -36,14 +40,14 @@
 }
 
 .project-title {
-    color: white;
-    font-family: "Titan One", cursive;
-    font-weight: 400;
-    font-size: 2em;
-  }
-  .project-text {
-    color: white;
-    font-family: "Oxygen", sans-serif;
-    opacity: 0.7;
-    font-size: 1.5em;
-  }
+  color: white;
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 2em;
+}
+.project-text {
+  color: white;
+  font-family: "Oxygen", sans-serif;
+  opacity: 0.7;
+  font-size: 1.5em;
+}

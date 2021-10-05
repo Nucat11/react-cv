@@ -2,6 +2,12 @@ const itemData = [
   {
     img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
     title: "Breakfast",
+    description: 'We eat this every morning'  
+  },
+  {
+    img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
+    title: "Burger",
+    description: 'We eat this every morning'
   },
   {
     img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
@@ -9,43 +15,29 @@ const itemData = [
   },
   {
     img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
-    title: "Camera",
+    title: "Burger",
   },
   {
     img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
-    title: "Coffee",
+    title: "Burger",
   },
   {
     img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
-    title: "Hats",
+    title: "Burger",
   },
   {
     img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
-    title: "Honey",
+    title: "Burger",
   },
   {
     img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
-    title: "Basketball",
+    title: "Burger",
   },
   {
     img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
-    title: "Fern",
+    title: "Burger",
   },
-  {
-    img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
-    title: "Mushrooms",
-  },
-  {
-    img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
-    title: "Tomato basil",
-  },
-  {
-    img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
-    title: "Sea star",
-  },
-  {
-    img: "https://res.cloudinary.com/nucat/image/upload/v1633183926/sample.webp",
-    title: "Bike",
-  },
+  
+
 ];
 export default itemData;

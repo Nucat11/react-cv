@@ -1,17 +1,21 @@
-.landing-page {
+.landing-page-background {
   background: url("https://res.cloudinary.com/nucat/image/upload/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
+
+.landing-page {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 .title {
   font-family: "Monoton", cursive;
   font-style: normal;
@@ -86,5 +90,5 @@
 }
 
 .MuiButton-root {
-  color:rgb(0, 0, 0, 0)
+  color: rgb(0, 0, 0, 0);
 }

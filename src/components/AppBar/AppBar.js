@@ -32,25 +32,44 @@ export default function HideAppBar(props) {
       <Slide appear={false} direction="down" in={!trigger}>
         <AppBar className={navbar ? "navbar active" : "navbar"}>
           <Toolbar className="toolbar">
-            <Box sx={{ flexGrow: 1, 
-            display: {
-              xs: 'none',
-              md: 'inherit'
-            }}} />
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: {
+                  xs: "none",
+                  md: "inherit",
+                },
+              }}
+            />
             <Breadcrumbs
               aria-label="breadcrumb"
-              sx={{ marginRight: "2em", height: '100%' }}
+              sx={{ marginRight: "2em", height: "100%" }}
               className="app-bar-text"
             >
-              <Link to="about-me" spy={true} smooth={true} duration={800}>
+              <Link
+                to="about-me-background"
+                spy={true}
+                smooth={true}
+                duration={800}
+              >
                 <Typography>About Me</Typography>
               </Link>
 
-              <Link to="projects" spy={true} smooth={true} duration={800}>
+              <Link
+                to="projects-background"
+                spy={true}
+                smooth={true}
+                duration={800}
+              >
                 <Typography>Projects</Typography>
               </Link>
 
-              <Link to="contact" spy={true} smooth={true} duration={800}>
+              <Link
+                to="contact-background"
+                spy={true}
+                smooth={true}
+                duration={800}
+              >
                 <Typography>Contact Me</Typography>
               </Link>
             </Breadcrumbs>

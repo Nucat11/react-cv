@@ -1,10 +1,14 @@
-.skills {
+.skills-background {
   height: 100vh;
   background: linear-gradient(190deg, rgba(45, 31, 56, 1) 60%, #463851 50%);
-  display: flex;
-  flex-direction: column;
   padding: 6%;
 }
+.skills {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .skills-title {
   color: white;
   font-size: 3.5em;
@@ -57,7 +61,7 @@
   filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff)
     drop-shadow(0 0 1px #fff) drop-shadow(0 0 4px #ff7d13)
     drop-shadow(0 0 5px #ff7d13);
-    height: 10vh;
+  height: 10vh;
 }
 
 .icons:nth-of-type(1) {
@@ -84,12 +88,11 @@
 
 @media only screen and (max-width: 1200px) {
   .icons {
-      font-size: 8vw;
+    font-size: 8vw;
   }
   .love {
-      padding-bottom: 500px;
+    padding-bottom: 500px;
   }
-  
 }
 
 @media only screen and (max-height: 700px) {

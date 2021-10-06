@@ -1,6 +1,6 @@
 @media only screen and (max-width: 900px) {
   .title {
-    font-size: 2.75em;
+    font-size: 3em !important;
   }
   .title-p {
     visibility: collapse;
@@ -38,6 +38,9 @@
   .triangle-div {
     display: none;
   }
+  .contact-icons {
+    font-size: 6em !important;
+  }
 
 
 }
@@ -49,9 +52,22 @@
   .about-me-text {
     padding-top: 1vh !important;
   }
+  .MuiBreadcrumbs-li {
+    font-size: 2px !important;
+  }
+  .title {
+    font-size: 2.75em !important;
+  }
+
 }
 
 body {
   cursor: default;
 }
 
+@media only screen and (orientation:landscape){
+  body {
+    height: 100vw !important;
+    transform: rotate(90deg) !important;
+  }
+}

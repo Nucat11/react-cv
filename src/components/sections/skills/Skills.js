@@ -9,7 +9,12 @@ import Arrow from "./Arrow";
 export default function Skills() {
   return (
     <Box className="skills-background">
-      <BoxFade className="skills">
+      <BoxFade className="skills" sx={{
+            alignItems: {
+              xs: 'center',
+              md: 'unset'
+            }
+      }}>
         <Box
           className="arrow-neon-box"
           sx={{
@@ -39,6 +44,14 @@ export default function Skills() {
             opacity: {
               xs: "0.3",
               md: "0.9",
+            },
+            marginLeft: {
+              xs: "0%",
+              md: "15%",
+            },
+            marginTop: {
+              xs: "10vh",
+              md: "20vh",
             },
           }}
         >

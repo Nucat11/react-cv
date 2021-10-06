@@ -65,9 +65,3 @@ body {
   cursor: default;
 }
 
-@media only screen and (orientation:landscape){
-  body {
-    height: 100vw !important;
-    transform: rotate(90deg) !important;
-  }
-}

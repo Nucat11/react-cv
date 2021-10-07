@@ -1,7 +1,7 @@
 {
   "name": "react-cv",
   "version": "0.1.0",
-   "engines": {
+  "engines": {
     "node": "14.x"
   },
   "private": true,
@@ -45,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "optimize-css-assets-webpack-plugin": "^4.0.0"
   }
 }

@@ -10,6 +10,7 @@
   animation: blue-line-animation 4s infinite 4s;
   transform: rotate(10deg);
   visibility: hidden;
+  will-change: transform, opacity, visibility, opacity;
 }
 
 @keyframes blue-line-animation {
@@ -48,6 +49,7 @@
   animation: blue-line-2Animation 4s infinite 3s;
   transform: rotate(10deg);
   visibility: hidden;
+  will-change: transform, opacity, visibility, opacity;
 }
 
 @keyframes blue-line-2Animation {
@@ -86,6 +88,7 @@
   transform: rotate(44deg);
   animation: green-line-animation 4s infinite 2s;
   visibility: hidden;
+  will-change: transform, opacity, visibility, opacity;
 }
 
 @keyframes green-line-animation {
@@ -124,6 +127,8 @@
   animation: line-animation 4s infinite;
   transform: rotate(-45deg);
   visibility: hidden;
+  will-change: transform, opacity, visibility, opacity;
+
 }
 
 @keyframes line-animation {
@@ -162,6 +167,7 @@
   animation: orange-line-animation 4s infinite 1s;
   transform: rotate(-25deg);
   visibility: hidden;
+  will-change: transform, opacity, visibility, opacity;
 }
 
 @keyframes orange-line-animation {

@@ -11,7 +11,9 @@
   .toolbar {
     justify-content: center;
   }
-
+  .landing-page-background {
+    background-attachment: scroll;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -24,6 +26,12 @@
   }
   .contact-icons {
     font-size: 6em !important;
+  }
+  .icons {
+    font-size: 8vw;
+  }
+  .love {
+    padding-bottom: 500px;
   }
 }
 
@@ -167,16 +175,14 @@ body {
 }
 
 .circle-neon {
-  animation: blink 5s infinite alternate ;
+  animation: blink 5s infinite alternate;
   height: 75vh;
   width: 100%;
   filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
-      drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #3bfc9b)
-      drop-shadow(0 0 5px #3bfc9b) drop-shadow(0 0 10px #3bfc9b)
-      drop-shadow(0 0 14px #3bfc9b) drop-shadow(0 0 20px #3bfc9b);
+    drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #3bfc9b)
+    drop-shadow(0 0 5px #3bfc9b) drop-shadow(0 0 10px #3bfc9b)
+    drop-shadow(0 0 14px #3bfc9b) drop-shadow(0 0 20px #3bfc9b);
 }
-
-
 
 .box-with-avatar {
   height: 65vh;
@@ -203,9 +209,9 @@ body {
   position: absolute;
   transform: rotate(25deg);
   filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
-      drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #1bffec)
-      drop-shadow(0 0 5px #1bffec) drop-shadow(0 0 10px #1bffec)
-      drop-shadow(0 0 14px #1bffec) drop-shadow(0 0 20px #1bffec);
+    drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #1bffec)
+    drop-shadow(0 0 5px #1bffec) drop-shadow(0 0 10px #1bffec)
+    drop-shadow(0 0 14px #1bffec) drop-shadow(0 0 20px #1bffec);
 }
 
 .triangle-div {
@@ -213,8 +219,6 @@ body {
   margin-left: 65%;
   width: 25%;
 }
-
-
 
 .contact-background {
   height: 50vh;
@@ -272,12 +276,12 @@ body {
 
 .landing-page-background {
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -297,7 +301,7 @@ body {
   line-height: 1;
   margin-bottom: 2vh;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 14px #fff, 0 0 20px #ff7d13,
-  0 0 25px #ff7d13, 0 0 35px #ff7d13, 0 0 45px #ff7d13, 0 0 60px #ff7d13;
+    0 0 25px #ff7d13, 0 0 35px #ff7d13, 0 0 45px #ff7d13, 0 0 60px #ff7d13;
   padding: 0 2% 0 2%;
   animation: blink 5s infinite alternate;
 }
@@ -321,8 +325,6 @@ body {
     opacity: 1;
   }
 }
-
-
 
 .title-p {
   font-family: "Oxygen", sans-serif;
@@ -369,7 +371,6 @@ body {
   }
 }
 
-
 @media only screen and (max-width: 858px) {
   .title {
     font-size: 4em;
@@ -396,6 +397,7 @@ body {
   .landing-page-background {
     background-image: url("https://res.cloudinary.com/nucat/image/upload/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.webp");
   }
+  
 }
 .blue-line {
   background-color: white;
@@ -435,7 +437,6 @@ body {
     -webkit-transform: translate(0, 0) rotate(20deg);
     transform: translate(0, 0) rotate(20deg);
   }
-
 }
 .blue-line-2 {
   background-color: white;
@@ -526,7 +527,7 @@ body {
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
   left: 30%;
-    top: 90%;
+  top: 90%;
 }
 
 @keyframes line-animation {
@@ -560,11 +561,11 @@ body {
     0 0 60px #ff7d13;
   z-index: 0;
   position: absolute;
- animation: orange-line-animation 4s infinite 1s;
+  animation: orange-line-animation 4s infinite 1s;
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
   top: 8%;
-    left: 90%;
+  left: 90%;
 }
 
 @keyframes orange-line-animation {
@@ -572,7 +573,6 @@ body {
     visibility: visible;
     -webkit-transform: translate(0, 0) rotate(-25deg);
     transform: translate(0, 0) rotate(-25deg);
-    
   }
   15% {
     -webkit-transform: translate(-40vw, 42vh) rotate(-25deg) scale(0.2);
@@ -728,14 +728,6 @@ body {
     drop-shadow(0 0 5px #3bfc9b);
 }
 
-@media only screen and (max-width: 1200px) {
-  .icons {
-    font-size: 8vw;
-  }
-  .love {
-    padding-bottom: 500px;
-  }
-}
 
 @media only screen and (max-height: 700px) {
   .arrow-neon-box {
@@ -744,8 +736,5 @@ body {
   .skills {
     padding-bottom: 15%;
     padding-top: 15%;
-  }
-  .blue-line-2 {
-    transform: rotate(90deg) !important;
   }
 }

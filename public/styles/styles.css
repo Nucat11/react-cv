@@ -65,3 +65,6 @@ body {
   cursor: default;
 }
 
+.loading {
+  background-color: transparent;
+}

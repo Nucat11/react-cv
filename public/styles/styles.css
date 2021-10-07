@@ -449,7 +449,6 @@ body {
   z-index: 0;
   position: absolute;
   animation: blue-line-2Animation 2.3s infinite 3s;
-  -webkit-animation: blue-line-2Animation 4s infinite 3s;
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
 }
@@ -485,7 +484,6 @@ body {
     0 0 60px #3bfc9b;
   z-index: 0;
   position: absolute;
-  -webkit-animation: green-line-animation 4s infinite 2s;
   animation: green-line-animation 4s infinite 2s;
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
@@ -524,7 +522,6 @@ body {
     0 0 60px #ff7d13;
   z-index: 0;
   position: absolute;
-  -webkit-animation: line-animation 4s infinite;
   animation: line-animation 4s infinite;
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
@@ -563,7 +560,6 @@ body {
     0 0 60px #ff7d13;
   z-index: 0;
   position: absolute;
-  -webkit-animation: orange-line-animation 4s infinite 1s;
  animation: orange-line-animation 4s infinite 1s;
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;

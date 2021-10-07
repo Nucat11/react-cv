@@ -383,10 +383,12 @@ body {
 @media (max-width: 480px) {
   .landing-page-background {
     background-image: url("https://res.cloudinary.com/nucat/image/upload/c_scale,w_1280/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.jpg");
+    -webkit-background-image: url("https://res.cloudinary.com/nucat/image/upload/c_scale,w_1280/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.jpg");
   }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
   .landing-page-background {
+    -webkit-background-image: url("https://res.cloudinary.com/nucat/image/upload/c_scale,w_1280/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.jpg");
     background-image: url("https://res.cloudinary.com/nucat/image/upload/c_scale,w_1280/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.jpg");
   }
 }

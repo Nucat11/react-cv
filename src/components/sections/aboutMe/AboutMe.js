@@ -1,6 +1,5 @@
 import * as React from "react";
 import BoxFade from "../../BoxFade";
-import "./aboutMe.css";
 import { Box } from "@mui/material";
 import Circle from "./Circle";
 import { Grid } from "@mui/material";

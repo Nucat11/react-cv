@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./contact.css";
 import { Box } from "@mui/material";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";

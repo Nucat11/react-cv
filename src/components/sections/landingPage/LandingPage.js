@@ -5,16 +5,13 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 // eslint-disable-next-line no-unused-vars
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Button } from "@mui/material";
-import Animations from "./animation/Animations";
-import "./animation/lineAnimation.css";
-import "./landingPage.css";
 import BoxFade from "../../BoxFade";
 
 export default function LandingPage() {
   return (
     <Grid className="landing-page-background">
       <BoxFade className="landing-page">
-        <Animations />
+      
         <Grid item xs={12} sx={{ zIndex: 1 }}>
           <Typography  className="title">
             Przemek Paziewski

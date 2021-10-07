@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./skills.css";
+
 import { Box, Typography } from "@mui/material";
 import BoxFade from "../../BoxFade";
 import { Grid } from "@mui/material";

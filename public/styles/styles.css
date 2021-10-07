@@ -61,7 +61,6 @@
 
 body {
   cursor: default;
-  -webkit-transform: translateZ(0);
 }
 
 .loader {

@@ -167,25 +167,16 @@ body {
 }
 
 .circle-neon {
-  animation: circle-animation 3s ease-in-out infinite alternate;
+  animation: blink 5s infinite alternate ;
   height: 75vh;
   width: 100%;
-}
-
-@keyframes circle-animation {
-  from {
-    -webkit-filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+  filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
       drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #3bfc9b)
       drop-shadow(0 0 5px #3bfc9b) drop-shadow(0 0 10px #3bfc9b)
       drop-shadow(0 0 14px #3bfc9b) drop-shadow(0 0 20px #3bfc9b);
-  }
-  to {
-    -webkit-filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #fff)
-      drop-shadow(0 0 6px #fff) drop-shadow(0 0 10px #3bfc9b)
-      drop-shadow(0 0 13px #3bfc9b) drop-shadow(0 0 15px #3bfc9b)
-      drop-shadow(0 0 20px #3bfc9b) drop-shadow(0 0 26px #3bfc9b);
-  }
 }
+
+
 
 .box-with-avatar {
   height: 65vh;
@@ -208,9 +199,13 @@ body {
 }
 
 .triangle-neon {
-  animation: triangle-animation 5s ease-in-out infinite alternate;
+  animation: blink 3s infinite alternate;
   position: absolute;
   transform: rotate(25deg);
+  filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+      drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #1bffec)
+      drop-shadow(0 0 5px #1bffec) drop-shadow(0 0 10px #1bffec)
+      drop-shadow(0 0 14px #1bffec) drop-shadow(0 0 20px #1bffec);
 }
 
 .triangle-div {
@@ -219,20 +214,7 @@ body {
   width: 25%;
 }
 
-@keyframes triangle-animation {
-  from {
-    -webkit-filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
-      drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #1bffec)
-      drop-shadow(0 0 5px #1bffec) drop-shadow(0 0 10px #1bffec)
-      drop-shadow(0 0 14px #1bffec) drop-shadow(0 0 20px #1bffec);
-  }
-  to {
-    -webkit-filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #fff)
-      drop-shadow(0 0 6px #fff) drop-shadow(0 0 10px #1bffec)
-      drop-shadow(0 0 13px #1bffec) drop-shadow(0 0 15px #1bffec)
-      drop-shadow(0 0 20px #1bffec) drop-shadow(0 0 26px #1bffec);
-  }
-}
+
 
 .contact-background {
   height: 50vh;
@@ -305,7 +287,6 @@ body {
   flex-wrap: wrap;
   align-content: center;
 }
-
 .title {
   font-family: "Monoton", cursive;
   font-style: normal;
@@ -315,10 +296,33 @@ body {
   color: #ffffff;
   line-height: 1;
   margin-bottom: 2vh;
-  -webkit-animation: neon-1 3s ease-in-out infinite alternate;
-  animation: neon-1 3s ease-in-out infinite alternate;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 14px #fff, 0 0 20px #ff7d13,
+  0 0 25px #ff7d13, 0 0 35px #ff7d13, 0 0 45px #ff7d13, 0 0 60px #ff7d13;
   padding: 0 2% 0 2%;
+  animation: blink 5s infinite alternate;
 }
+@keyframes blink {
+  0.1% {
+    opacity: 1;
+  }
+  0.4% {
+    opacity: 0.3;
+  }
+  0.7% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0.3;
+  }
+  1.3% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 
 .title-p {
   font-family: "Oxygen", sans-serif;
@@ -365,16 +369,6 @@ body {
   }
 }
 
-@keyframes neon-1 {
-  from {
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #ff7d13,
-      0 0 12px #ff7d13, 0 0 24px #ff7d13, 0 0 35px #ff7d13, 0 0 45px #ff7d13;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 14px #fff, 0 0 20px #ff7d13,
-      0 0 25px #ff7d13, 0 0 35px #ff7d13, 0 0 45px #ff7d13, 0 0 60px #ff7d13;
-  }
-}
 
 @media only screen and (max-width: 858px) {
   .title {
@@ -388,12 +382,12 @@ body {
 
 @media (max-width: 480px) {
   .landing-page-background {
-    background-image: url("https://res.cloudinary.com/nucat/image/upload/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.webp");
+    background-image: url("https://res.cloudinary.com/nucat/image/upload/c_scale,w_1280/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.jpg");
   }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
   .landing-page-background {
-    background-image: url("https://res.cloudinary.com/nucat/image/upload/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.webp");
+    background-image: url("https://res.cloudinary.com/nucat/image/upload/c_scale,w_1280/v1633001010/Bez_tytu%C5%82u_bxrhlb_qoz0ym_1_advxze.jpg");
   }
 }
 @media (min-width: 1025px) {
@@ -410,7 +404,7 @@ body {
     0 0 60px #1bffec;
   z-index: 0;
   position: absolute;
-  animation: blue-line-animation 4s infinite 4s;
+  animation: blue-line-animation 5s infinite 4s;
 
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
@@ -452,7 +446,7 @@ body {
     0 0 60px #1bffec;
   z-index: 0;
   position: absolute;
-  animation: blue-line-2Animation 4s infinite 3s;
+  animation: blue-line-2Animation 2.3s infinite 3s;
   -webkit-animation: blue-line-2Animation 4s infinite 3s;
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
@@ -658,7 +652,7 @@ body {
 .skills {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 50vh;
 }
 
 .skills-title {

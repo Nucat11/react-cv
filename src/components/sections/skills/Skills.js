@@ -99,8 +99,9 @@ export default function Skills() {
             </Typography>
           </Grid>
         </Grid>
-
-        <Box className="love">
+        </BoxFade>
+        
+        <BoxFade className="love skills">
           <Typography
             className="skills-title"
             sx={{
@@ -154,8 +155,8 @@ export default function Skills() {
               />
             </Box>
           </Box>
-        </Box>
-      </BoxFade>
+        </BoxFade>
+
     </Box>
   );
 }

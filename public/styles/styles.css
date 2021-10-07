@@ -72,7 +72,7 @@ body {
   border: 1.1em solid rgba(0, 0, 0, 0.2);
   border-left: 1.1em solid #000000;
   border-radius: 50%;
-  animation:  1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
   transition: opacity 0.3s;
 }
 
@@ -181,7 +181,7 @@ body {
 }
 
 .circle-neon {
-  animation:  3s ease-in-out infinite alternate;
+  animation: circle-animation 3s ease-in-out infinite alternate;
   height: 75vh;
   width: 100%;
 }
@@ -222,7 +222,7 @@ body {
 }
 
 .triangle-neon {
-  animation:  5s ease-in-out infinite alternate;
+  animation: triangle-animation 5s ease-in-out infinite alternate;
   position: absolute;
   transform: rotate(25deg);
 }
@@ -329,7 +329,7 @@ body {
   color: #ffffff;
   line-height: 1;
   margin-bottom: 2vh;
-  animation:  3s ease-in-out infinite alternate;
+  animation: neon-1 3s ease-in-out infinite alternate;
   padding: 0 2% 0 2%;
 }
 
@@ -358,7 +358,7 @@ body {
   margin-left: -56px;
   opacity: 1;
   border-radius: 50%;
-  animation:  1s ease-in-out infinite;
+  animation: slide-1 1s ease-in-out infinite;
 }
 
 .arrow-link:hover {
@@ -421,7 +421,7 @@ body {
     0 0 60px #1bffec;
   z-index: 0;
   position: absolute;
-  animation:  4s infinite 4s;
+  animation: blue-line-animation 4s infinite 4s;
   transform: rotate(10deg);
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
@@ -460,7 +460,7 @@ body {
     0 0 60px #1bffec;
   z-index: 0;
   position: absolute;
-  animation:  4s infinite 3s;
+  animation: blue-line-2Animation 4s infinite 3s;
   transform: rotate(10deg);
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
@@ -500,7 +500,7 @@ body {
   z-index: 0;
   position: absolute;
   transform: rotate(44deg);
-  animation:  4s infinite 2s;
+  animation: green-line-animation 4s infinite 2s;
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
 }
@@ -538,7 +538,7 @@ body {
     0 0 60px #ff7d13;
   z-index: 0;
   position: absolute;
-  animation:  4s infinite;
+  animation: line-animation 4s infinite;
   transform: rotate(-45deg);
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
@@ -577,7 +577,7 @@ body {
     0 0 60px #ff7d13;
   z-index: 0;
   position: absolute;
-  animation:  4s infinite 1s;
+  animation: orange-line-animation 4s infinite 1s;
   transform: rotate(-25deg);
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;

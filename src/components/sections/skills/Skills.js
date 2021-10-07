@@ -114,7 +114,6 @@ export default function Skills() {
             Things I love
           </Typography>
           <Box sx={{ paddingTop: "2vh" }}>
-            {" "}
             <Box display="flex">
               <FaWordpressSimple className="icons" />
               <FaWordpressSimple className="icons" />

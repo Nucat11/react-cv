@@ -6,12 +6,13 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Button } from "@mui/material";
 import BoxFade from "../../BoxFade";
+import Animations from './animation/Animations'
 
 export default function LandingPage() {
   return (
     <Grid className="landing-page-background">
       <BoxFade className="landing-page">
-      
+        <Animations/>
         <Grid item xs={12} sx={{ zIndex: 1 }}>
           <Typography  className="title">
             Przemek Paziewski

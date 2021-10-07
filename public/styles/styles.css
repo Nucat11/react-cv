@@ -11,21 +11,7 @@
   .toolbar {
     justify-content: center;
   }
-  .blue-line {
-    transform: rotate(20deg) scale(1.5) !important;
-  }
-  .blue-line-2 {
-    transform: scale(1.5) rotate(15deg) !important;
-  }
-  .green-line {
-    transform: scale(1.5) rotate(75deg) !important;
-  }
-  .orange-line {
-    transform: scale(1.5) rotate(-60deg) !important;
-  }
-  .orange-line-2 {
-    transform: scale(1.5) rotate(-60deg) !important;
-  }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -370,10 +356,12 @@ body {
   0%,
   100% {
     -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   50% {
     -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
   }
 }
 
@@ -423,46 +411,49 @@ body {
   z-index: 0;
   position: absolute;
   animation: blue-line-animation 4s infinite 4s;
-  transform: rotate(10deg);
+
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
+  top: 28%;
+  left: 2%;
 }
 
 @keyframes blue-line-animation {
   0% {
     visibility: visible;
-    left: 2%;
-    top: 28%;
+    -webkit-transform: translate(0, 0) rotate(10deg);
+    transform: translate(0, 0) rotate(10deg);
   }
   15% {
-    left: 40%;
-    top: 40%;
-    -webkit-transform: scale(0.2) rotate(10deg);
+    -webkit-transform: translate(48vw, 22vh) scale(0.2) rotate(10deg);
+    transform: translate(48vw, 22vh) scale(0.2) rotate(10deg);
     opacity: 0;
   }
   20%,
   95% {
-    left: 2%;
-    top: 28%;
-    -webkit-transform: scale(1) rotate(10deg);
+    -webkit-transform: translate(0, 0) rotate(10deg);
+    transform: translate(0, 0) scale(1) rotate(10deg);
     opacity: 0;
   }
   100% {
-    left: 2%;
-    top: 28%;
+    -webkit-transform: translate(0, 0) rotate(20deg);
+    transform: translate(0, 0) rotate(20deg);
   }
+
 }
 .blue-line-2 {
   background-color: white;
   height: 2px;
   width: 8%;
+  top: 60%;
+  left: 80%;
   box-shadow: 0 0 5px #1bffec, 0 0 10px #1bffec, 0 0 14px #1bffec,
     0 0 20px #1bffec, 0 0 25px #1bffec, 0 0 35px #1bffec, 0 0 45px #1bffec,
     0 0 60px #1bffec;
   z-index: 0;
   position: absolute;
   animation: blue-line-2Animation 4s infinite 3s;
-  transform: rotate(10deg);
+  -webkit-animation: blue-line-2Animation 4s infinite 3s;
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
 }
@@ -470,25 +461,23 @@ body {
 @keyframes blue-line-2Animation {
   0% {
     visibility: visible;
-    top: 60%;
-    left: 90%;
+    -webkit-transform: translate(0, 0) rotate(10deg);
+    transform: translate(0, 0) rotate(10deg);
   }
   15% {
-    top: 50%;
-    left: 48%;
-    -webkit-transform: scale(0.2) rotate(10deg);
+    -webkit-transform: translate(-40vw, -10vh) rotate(10deg) scale(0.2);
+    transform: translate(-40vw, -10vh) rotate(10deg) scale(0.2);
     opacity: 0;
   }
   20%,
   95% {
-    top: 60%;
-    left: 90%;
-    -webkit-transform: scale(1) rotate(10deg);
+    -webkit-transform: translate(0, 0) rotate(10deg) scale(1);
+    transform: translate(0, 0) rotate(10deg) scale(1);
     opacity: 0;
   }
   100% {
-    top: 60%;
-    left: 90%;
+    -webkit-transform: translate(0, 0) rotate(10deg);
+    transform: translate(0, 0) rotate(10deg);
   }
 }
 .green-line {
@@ -500,36 +489,34 @@ body {
     0 0 60px #3bfc9b;
   z-index: 0;
   position: absolute;
-  -webkit-transform: rotate(44deg);
-  transform: rotate(44deg);
   -webkit-animation: green-line-animation 4s infinite 2s;
   animation: green-line-animation 4s infinite 2s;
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
+  left: 70.5%;
+  top: 90%;
 }
 
 @keyframes green-line-animation {
   0% {
     visibility: visible;
-    left: 70.5%;
-    top: 90%;
+    -webkit-transform: translate(0, 0) rotate(52deg);
+    transform: translate(0, 0) rotate(52deg);
   }
   15% {
-    left: 50%;
-    top: 60%;
-    -webkit-transform: scale(0.2) rotate(44deg);
+    -webkit-transform: translate(-20vw, -40vh) rotate(52deg) scale(0.2);
+    transform: translate(-20vw, -40vh) rotate(52deg) scale(0.2);
     opacity: 0;
   }
   20%,
   95% {
-    left: 70.5%;
-    top: 90%;
-    transform: rotate(44deg);
+    -webkit-transform: translate(0, 0) rotate(52deg) scale(1);
+    transform: translate(0, 0) rotate(52deg) scale(1);
     opacity: 0;
   }
   100% {
-    left: 70.5%;
-    top: 90%;
+    -webkit-transform: translate(0, 0) rotate(52deg);
+    transform: translate(0, 0) rotate(52deg);
   }
 }
 .orange-line {
@@ -542,35 +529,33 @@ body {
   z-index: 0;
   position: absolute;
   -webkit-animation: line-animation 4s infinite;
-  -webkit-transform: rotate(-45deg);
   animation: line-animation 4s infinite;
-  transform: rotate(-45deg);
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
+  left: 30%;
+    top: 90%;
 }
 
 @keyframes line-animation {
   0% {
     visibility: visible;
-    left: 30%;
-    top: 80%;
+    -webkit-transform: translate(0, 0) rotate(-45deg);
+    transform: translate(0, 0) rotate(-45deg);
   }
   15% {
-    left: 44%;
-    top: 50%;
-    -webkit-transform: scale(0.2) rotate(-45deg);
+    -webkit-transform: translate(20vw, -40vh) rotate(-45deg) scale(0.2);
+    transform: translate(20vw, -40vh) rotate(-45deg) scale(0.2);
     opacity: 0;
   }
   20%,
   95% {
-    left: 30%;
-    top: 80%;
-    -webkit-transform: scale(1) rotate(-45deg);
+    -webkit-transform: translate(0, 0) rotate(-45deg) scale(1);
+    transform: translate(0, 0) rotate(-45deg) scale(1);
     opacity: 0;
   }
   100% {
-    left: 30%;
-    top: 80%;
+    -webkit-transform: translate(0, 0) rotate(-45deg) scale(1);
+    transform: translate(0, 0) rotate(-45deg) scale(1);
   }
 }
 .orange-line-2 {
@@ -583,35 +568,34 @@ body {
   z-index: 0;
   position: absolute;
   -webkit-animation: orange-line-animation 4s infinite 1s;
-  -webkit-transform: rotate(-25deg);
  animation: orange-line-animation 4s infinite 1s;
-  transform: rotate(-25deg);
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
+  top: 8%;
+    left: 90%;
 }
 
 @keyframes orange-line-animation {
   0% {
     visibility: visible;
-    top: 8%;
-    left: 90%;
+    -webkit-transform: translate(0, 0) rotate(-25deg);
+    transform: translate(0, 0) rotate(-25deg);
+    
   }
   15% {
-    top: 40%;
-    left: 50%;
-    -webkit-transform: scale(0.2) rotate(-25deg);
+    -webkit-transform: translate(-40vw, 42vh) rotate(-25deg) scale(0.2);
+    transform: translate(-40vw, 42vh) rotate(-25deg) scale(0.2);
     opacity: 0;
   }
   20%,
   95% {
-    top: 8%;
-    left: 90%;
-    -webkit-transform: scale(1) rotate(-25deg);
+    -webkit-transform: translate(0, 0) rotate(-25deg) scale(1);
+    transform: translate(0, 0) rotate(-25deg) scale(1);
     opacity: 0;
   }
   100% {
-    top: 8%;
-    left: 90%;
+    -webkit-transform: translate(0, 0) rotate(-25deg) scale(1);
+    transform: translate(0, 0) rotate(-25deg) scale(1);
   }
 }
 .projects-background {
@@ -768,5 +752,8 @@ body {
   .skills {
     padding-bottom: 15%;
     padding-top: 15%;
+  }
+  .blue-line-2 {
+    transform: rotate(90deg) !important;
   }
 }

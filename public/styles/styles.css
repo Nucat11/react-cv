@@ -188,13 +188,13 @@ body {
 
 @keyframes circle-animation {
   from {
-    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+    -webkit-filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
       drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #3bfc9b)
       drop-shadow(0 0 5px #3bfc9b) drop-shadow(0 0 10px #3bfc9b)
       drop-shadow(0 0 14px #3bfc9b) drop-shadow(0 0 20px #3bfc9b);
   }
   to {
-    filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #fff)
+    -webkit-filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #fff)
       drop-shadow(0 0 6px #fff) drop-shadow(0 0 10px #3bfc9b)
       drop-shadow(0 0 13px #3bfc9b) drop-shadow(0 0 15px #3bfc9b)
       drop-shadow(0 0 20px #3bfc9b) drop-shadow(0 0 26px #3bfc9b);
@@ -235,13 +235,13 @@ body {
 
 @keyframes triangle-animation {
   from {
-    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+    -webkit-filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
       drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #1bffec)
       drop-shadow(0 0 5px #1bffec) drop-shadow(0 0 10px #1bffec)
       drop-shadow(0 0 14px #1bffec) drop-shadow(0 0 20px #1bffec);
   }
   to {
-    filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #fff)
+    -webkit-filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #fff)
       drop-shadow(0 0 6px #fff) drop-shadow(0 0 10px #1bffec)
       drop-shadow(0 0 13px #1bffec) drop-shadow(0 0 15px #1bffec)
       drop-shadow(0 0 20px #1bffec) drop-shadow(0 0 26px #1bffec);
@@ -329,6 +329,7 @@ body {
   color: #ffffff;
   line-height: 1;
   margin-bottom: 2vh;
+  -webkit-animation: neon-1 3s ease-in-out infinite alternate;
   animation: neon-1 3s ease-in-out infinite alternate;
   padding: 0 2% 0 2%;
 }
@@ -368,11 +369,11 @@ body {
 @keyframes slide-1 {
   0%,
   100% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
   }
 
   50% {
-    transform: translate(0, 5px);
+    -webkit-transform: translate(0, 5px);
   }
 }
 
@@ -436,14 +437,14 @@ body {
   15% {
     left: 40%;
     top: 40%;
-    transform: scale(0.2) rotate(10deg);
+    -webkit-transform: scale(0.2) rotate(10deg);
     opacity: 0;
   }
   20%,
   95% {
     left: 2%;
     top: 28%;
-    transform: scale(1) rotate(10deg);
+    -webkit-transform: scale(1) rotate(10deg);
     opacity: 0;
   }
   100% {
@@ -475,14 +476,14 @@ body {
   15% {
     top: 50%;
     left: 48%;
-    transform: scale(0.2) rotate(10deg);
+    -webkit-transform: scale(0.2) rotate(10deg);
     opacity: 0;
   }
   20%,
   95% {
     top: 60%;
     left: 90%;
-    transform: scale(1) rotate(10deg);
+    -webkit-transform: scale(1) rotate(10deg);
     opacity: 0;
   }
   100% {
@@ -499,7 +500,9 @@ body {
     0 0 60px #3bfc9b;
   z-index: 0;
   position: absolute;
+  -webkit-transform: rotate(44deg);
   transform: rotate(44deg);
+  -webkit-animation: green-line-animation 4s infinite 2s;
   animation: green-line-animation 4s infinite 2s;
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
@@ -514,7 +517,7 @@ body {
   15% {
     left: 50%;
     top: 60%;
-    transform: scale(0.2) rotate(44deg);
+    -webkit-transform: scale(0.2) rotate(44deg);
     opacity: 0;
   }
   20%,
@@ -538,6 +541,8 @@ body {
     0 0 60px #ff7d13;
   z-index: 0;
   position: absolute;
+  -webkit-animation: line-animation 4s infinite;
+  -webkit-transform: rotate(-45deg);
   animation: line-animation 4s infinite;
   transform: rotate(-45deg);
   visibility: hidden;
@@ -553,14 +558,14 @@ body {
   15% {
     left: 44%;
     top: 50%;
-    transform: scale(0.2) rotate(-45deg);
+    -webkit-transform: scale(0.2) rotate(-45deg);
     opacity: 0;
   }
   20%,
   95% {
     left: 30%;
     top: 80%;
-    transform: scale(1) rotate(-45deg);
+    -webkit-transform: scale(1) rotate(-45deg);
     opacity: 0;
   }
   100% {
@@ -577,7 +582,9 @@ body {
     0 0 60px #ff7d13;
   z-index: 0;
   position: absolute;
-  animation: orange-line-animation 4s infinite 1s;
+  -webkit-animation: orange-line-animation 4s infinite 1s;
+  -webkit-transform: rotate(-25deg);
+ animation: orange-line-animation 4s infinite 1s;
   transform: rotate(-25deg);
   visibility: hidden;
   will-change: transform, opacity, visibility, opacity;
@@ -592,14 +599,14 @@ body {
   15% {
     top: 40%;
     left: 50%;
-    transform: scale(0.2) rotate(-25deg);
+    -webkit-transform: scale(0.2) rotate(-25deg);
     opacity: 0;
   }
   20%,
   95% {
     top: 8%;
     left: 90%;
-    transform: scale(1) rotate(-25deg);
+    -webkit-transform: scale(1) rotate(-25deg);
     opacity: 0;
   }
   100% {

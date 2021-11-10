@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import './projects.css'
 import { Box } from "@mui/material";
 import { Grid } from "@mui/material";
 import itemData from "./itemData";

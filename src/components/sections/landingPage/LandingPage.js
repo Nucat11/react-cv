@@ -7,6 +7,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { Button } from "@mui/material";
 import BoxFade from "../../BoxFade";
 import Animations from './animation/Animations'
+import "./landingPage.css"
 
 export default function LandingPage() {
   return (

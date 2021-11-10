@@ -9,6 +9,7 @@ import Slide from "@mui/material/Slide";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Box } from "@mui/material";
 import { Breadcrumbs } from "@mui/material";
+import "./appBar.css";
 
 export default function HideAppBar(props) {
   const [navbar, setNavbar] = useState(false);

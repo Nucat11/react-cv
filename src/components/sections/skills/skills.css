@@ -1,0 +1,85 @@
+.skills-background {
+    min-height: 100vh;
+    background: linear-gradient(190deg, rgba(45, 31, 56, 1) 60%, #463851 50%);
+    padding: 6%;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+  }
+  
+  .skills-title {
+    color: white;
+    font-size: 3.5em;
+    font-family: "Titan One", cursive;
+    padding-top: 2vh;
+    margin-right: 1%;
+  }
+  
+  .skills-box {
+    height: 50vh;
+    margin-right: 2%;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    z-index: 2;
+    margin-top: 10%;
+  }
+  .love {
+    margin-left: 2%;
+    height: 50vh;
+  }
+  .skill-text {
+    color: white;
+    padding: 1em;
+    padding-top: 2vh;
+    height: 100%;
+    font-family: "Oxygen", sans-serif;
+    opacity: 0.7;
+    padding-bottom: 10%;
+  }
+  .wrench-div {
+    position: absolute;
+  }
+  .wrench {
+    font-size: 15em;
+    color: white;
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+      drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #ff7d13)
+      drop-shadow(0 0 5px #ff7d13) drop-shadow(0 0 10px #ff7d13)
+      drop-shadow(0 0 14px #ff7d13) drop-shadow(0 0 20px #ff7d13);
+  }
+  
+  .icons {
+    font-size: 5vw;
+    color: white;
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff)
+      drop-shadow(0 0 1px #fff) drop-shadow(0 0 4px #ff7d13)
+      drop-shadow(0 0 5px #ff7d13);
+    height: 10vh;
+  }
+  
+  .icons:nth-of-type(1) {
+    flex-grow: 1;
+  }
+  .icons:nth-of-type(2) {
+    flex-grow: 1;
+  }
+  .icons:nth-of-type(3) {
+    flex-grow: 1;
+  }
+  .icons:nth-of-type(4) {
+    flex-grow: 1;
+  }
+  
+  .arrow-neon-box {
+    position: absolute;
+    z-index: 0;
+    transform: rotate(25deg);
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)
+      drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #3bfc9b)
+      drop-shadow(0 0 5px #3bfc9b);
+  }

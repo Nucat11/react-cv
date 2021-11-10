@@ -4,7 +4,7 @@ import BoxFade from "../../BoxFade";
 import { Grid } from "@mui/material";
 import { FaWrench, FaWordpressSimple } from "react-icons/fa";
 import Arrow from "./Arrow";
-
+import './skills.css'
 export default function Skills() {
   return (
     <Box className="skills-background">

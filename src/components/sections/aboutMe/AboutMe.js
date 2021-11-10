@@ -5,6 +5,7 @@ import Circle from "./Circle";
 import { Grid } from "@mui/material";
 import Triangle from "./Triangle";
 import { Typography } from "@mui/material";
+import "./aboutMe.css"
 export default function AboutMe() {
   return (
     <Box className="about-me-background">

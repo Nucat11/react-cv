@@ -5,6 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import { Link } from "@mui/material";
 import BoxFade from "../../BoxFade";
+import "./contact.css"
 
 export default function Contact() {
   return (
